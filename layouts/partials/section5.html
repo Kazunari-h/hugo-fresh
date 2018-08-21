@@ -5,23 +5,22 @@
       <h3 class="subtitle is-5 is-muted">1営業日以内に返信いたします。</h3>
       <div class="divider is-centered"></div>
     </div>
-
     <div class="content-wrapper">
       <div class="columns">
         <div class="column is-6 is-offset-3">
-          <form>
+          <form name="contact" method="POST" netlify>
             <div class="columns is-multiline">
               <div class="column is-6">
-                <input class="input is-medium" type="text" placeholder="氏名">
+                <input class="input is-medium" type="text" name="name" placeholder="氏名">
               </div>
               <div class="column is-6">
-                <input class="input is-medium" type="email" placeholder="メールアドレス">
+                <input class="input is-medium" type="email" name="email" placeholder="メールアドレス">
               </div>
               <div class="column is-12">
-                <textarea class="textarea" rows="10" placeholder="お問い合わせの内容"></textarea>
+                <textarea class="textarea" rows="10" placeholder="お問い合わせの内容" name="message" ></textarea>
               </div>
               <div class="form-footer has-text-centered mt-10">
-                <button class="button cta is-large primary-btn raised is-clear">送信</button>
+                <button class="button cta is-large primary-btn raised is-clear" type="submit">送信</button>
               </div>
             </div>
           </form>
